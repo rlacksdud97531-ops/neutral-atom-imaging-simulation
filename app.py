@@ -413,12 +413,12 @@ if st.session_state.image is not None:
         fig4, (ax4a, ax4b) = plt.subplots(1, 2, figsize=(12, 3))
 
         ax4a.plot(image[cy, :], color="royalblue")
-        ax4a.set_title(f"수평 단면 (row = {cy})")
+        ax4a.set_title(f"Horizontal Cross-section (row = {cy})")
         ax4a.set_xlabel("X (pixel)")
         ax4a.set_ylabel("Counts")
 
         ax4b.plot(image[:, cx], color="tomato")
-        ax4b.set_title(f"수직 단면 (col = {cx})")
+        ax4b.set_title(f"Vertical Cross-section (col = {cx})")
         ax4b.set_xlabel("Y (pixel)")
         ax4b.set_ylabel("Counts")
 
