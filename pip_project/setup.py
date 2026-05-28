@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='neutral_atom_imaging_simulation',
-    version='0.0.1',    
+    version='0.0.2',
     description='Package for generating simulated images of neutral atoms',
     url='https://gitlab.lrz.de/jonas.winklmann/neutral-atom-imaging-simulation',
     author='Jonas Winklmann',

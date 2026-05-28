@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 [project]
 name = "neutral_atom_imaging_simulation"
-version = "0.0.1"
+version = "0.0.2"
 authors = [
   { name="Jonas Winklmann", email="jonas.winklmann@tum.de" },
 ]

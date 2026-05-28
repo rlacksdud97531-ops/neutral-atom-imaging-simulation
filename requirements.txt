@@ -1,4 +1,4 @@
-./pip_project/dist/neutral_atom_imaging_simulation-0.0.1-py3-none-any.whl
+./pip_project/dist/neutral_atom_imaging_simulation-0.0.2-py3-none-any.whl
 matplotlib
 numpy
 scikit-image
