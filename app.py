@@ -239,7 +239,7 @@ with st.sidebar:
     )
 
     st.divider()
-    run_btn = st.button("▶ Run Simulation", type="primary", use_container_width=True)
+    run_btn = st.button("▶ Run Simulation", type="primary", width='stretch')
 
 # ══════════════════════════════════════════════════════════════════════════════
 #  시뮬레이션 실행
@@ -375,7 +375,7 @@ if st.session_state.image is not None:
             f"λ = {meta['wavelength']:.4f} μm  |  NA = {meta['na']:.2f}  |  "
             f"t = {meta['exposure']:.3f} s  |  Binning = {meta['binning']}"
         )
-        st.pyplot(fig, use_container_width=True)
+        st.pyplot(fig, width='stretch')
         plt.close(fig)
 
     with col_psf:
@@ -385,7 +385,7 @@ if st.session_state.image is not None:
         plt.colorbar(im2, ax=ax2, fraction=0.046, pad=0.04)
         ax2.set_title("50 × 50 px")
         ax2.axis("off")
-        st.pyplot(fig2, use_container_width=True)
+        st.pyplot(fig2, width='stretch')
         plt.close(fig2)
 
         st.subheader("사이트 점유율")
@@ -403,7 +403,7 @@ if st.session_state.image is not None:
         ax3.set_title("Pixel Intensity Distribution")
         ax3.axvline(flat.mean(), color="red", linestyle="--", label=f"Mean = {flat.mean():.1f}")
         ax3.legend()
-        st.pyplot(fig3, use_container_width=True)
+        st.pyplot(fig3, width='stretch')
         plt.close(fig3)
 
     # ── 1D 단면 (Cross-section) ───────────────────────────────────────────────
@@ -422,7 +422,7 @@ if st.session_state.image is not None:
         ax4b.set_xlabel("Y (pixel)")
         ax4b.set_ylabel("Counts")
 
-        st.pyplot(fig4, use_container_width=True)
+        st.pyplot(fig4, width='stretch')
         plt.close(fig4)
 
 else:
