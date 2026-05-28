@@ -184,9 +184,9 @@ class CMOSCamera(Camera):
         """Function for relaying any settings changes to the library
         @return None"""
         if self.dark_current_sampling_alpha is not None:
-            self.library.setDarkCurrentSamplingAlpha(ctypes.c_double(self.dark_current_rate))
+            self.library.setDarkCurrentSamplingAlpha(ctypes.c_double(self.dark_current_sampling_alpha))
         if self.dark_current_sampling_beta is not None:
-            self.library.setDarkCurrentSamplingBeta(ctypes.c_double(self.dark_current_rate))
+            self.library.setDarkCurrentSamplingBeta(ctypes.c_double(self.dark_current_sampling_beta))
         if self.quantum_efficiency is not None:
             self.library.setQuantumEfficiency(ctypes.c_double(self.quantum_efficiency))
         if self.numerical_aperture is not None:
